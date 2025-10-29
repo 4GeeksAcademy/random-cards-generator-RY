@@ -1,35 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-success d-flex flex-column justify-content-center align-items-center vh-100">
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+  <div class="card" id="card">
+    <div class="corner top" id="top-suit">♥</div>
+    <div class="center" id="card-value">3</div>
+    <div class="corner bottom" id="bottom-suit">♥</div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <button id="newCardBtn" class="btn btn-light mt-4">New Card</button>
+
+  <script src="app.js"></script>
+</body>
 </html>
+
+
+
