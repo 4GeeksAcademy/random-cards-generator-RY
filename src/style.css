@@ -26,6 +26,7 @@
 .bottom {
   bottom: 10px;
   right: 10px;
+  transform: rotate(180deg);
 }
 
 .center {
